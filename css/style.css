@@ -40,7 +40,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    z-index: -1;
+    z-index: -9999;
     overflow-x: hidden;
 }
 
@@ -60,7 +60,7 @@ body {
 
 :root {
     --cor-primaria: #000;
-    --cor-secundaria: #FF143A;
+    --cor-secundaria: #ffbb22;
     --cor-terciaria: #fff;
     --fonte-heading: 'Monument', sans-serif;
     --fonte-heading-2: 'Monument Regular', sans-serif;
@@ -146,7 +146,7 @@ ul {
 .links-nav-box {
     font-family: var(--fonte-heading-2);
     padding: 10px 20px;
-    color: var(--cor-terciaria);
+    color: var(--cor-primaria);
     background-color: var(--cor-secundaria);
     border-radius: 20px;
 }
@@ -288,7 +288,7 @@ ul {
 }
 
 .render-02 {
-    width: 320px;
+    width: 420px;
 }
 
 .info-box-01,.info-box-03 {
@@ -393,7 +393,8 @@ ul {
 }
 
 .render-03 {
-    height: 15.5rem;
+    height: 14rem;
+    width: auto;
 }
 
 .heading-1 {
@@ -575,7 +576,7 @@ ul {
     background-color: var(--cor-secundaria);
     font-family: var(--fonte-heading-2);
     font-size: 1.25rem;
-    color: var(--cor-terciaria);
+    color: var(--cor-primaria);
     border-radius: .75rem;
 }
 
@@ -969,3 +970,27 @@ ul {
     }
 }
 
+.categories h1 {
+    width: 775px;
+    align-self: center;
+}
+
+.brands h1 {
+    width: 621px;
+    align-self: center;
+}
+
+.conditions h1 {
+    width: 496px;
+    align-self: center;
+}
+
+.tips h1 {
+    width: 875px;
+    align-self: center;
+}
+
+.faq h1 {
+    width: 480px;
+    align-self: center;
+}

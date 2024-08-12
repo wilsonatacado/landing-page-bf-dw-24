@@ -24,10 +24,9 @@
     }
 
     .render-01 {
-        /* width: 45%;
-        height: 100%; */
         align-self: center;
         flex-shrink: 3;
+        height: 40vh;
     }
 
     .home-content-right {
@@ -39,6 +38,10 @@
 
     .home-content .heading-highlight {
         font-size: 3rem;
+    }
+
+    .render-02 {
+        width: 50%;
     }
 
     .info-content .paragraph {
@@ -185,4 +188,28 @@
         border: 2px solid var(--cor-secundaria);
     }
 
+}
+
+@media screen and (max-width: 900px) {
+
+    .categories h1 {
+        width: 90%!important;
+    }
+    
+    .brands h1 {
+        width: 90%!important;
+    }
+    
+    .conditions h1 {
+        width: 90%!important;
+    }
+    
+    .tips h1 {
+        width: 90%!important;
+    }
+    
+    .faq h1 {
+        width: 90%!important;
+    }
+    
 }
