@@ -200,4 +200,59 @@
 
 
 
+    // Selecione a barra de navegação
+    const navBar = document.querySelector('.nav-bar');
+
+    // Variável para armazenar a posição do scroll anterior
+    let lastScrollY = window.scrollY;
+
+    // Função para esconder ou mostrar a barra de navegação
+    function toggleNavBar() {
+    // Verifique se a página foi rolada para baixo ou para cima
+    if (window.scrollY > lastScrollY) {
+        // Se rolou para baixo, adicione a classe para esconder a barra
+        navBar.classList.add('hide-nav');
+    } else {
+        // Se rolou para cima, remova a classe para mostrar a barra
+        navBar.classList.remove('hide-nav');
+    }
     
+    // Atualize a posição do scroll anterior
+    lastScrollY = window.scrollY;
+    }
+
+    // Adicione o evento de rolagem à janela
+    window.addEventListener('scroll', toggleNavBar);
+
+
+
+    // Selecione todos os links com a classe "links-nav"
+        const links = document.querySelectorAll('.links-nav');
+
+        // Adicione o evento de clique em cada link
+        links.forEach((link) => {
+        link.addEventListener('click', (e) => {
+            // Previna o comportamento padrão do link
+            e.preventDefault();
+
+            // Pegue o atributo "href" do link
+            const href = link.getAttribute('href');
+
+            // Selecione o elemento que corresponde ao href
+            const target = document.querySelector(href);
+
+            // Adicione a classe "smooth-scroll" ao corpo do documento
+            document.body.classList.add('smooth-scroll');
+
+            // Anime o scroll até o elemento alvo
+            window.scrollTo({
+            top: target.offsetTop,
+            behavior: 'smooth',
+            });
+
+            // Remova a classe "smooth-scroll" após a animação
+            setTimeout(() => {
+            document.body.classList.remove('smooth-scroll');
+            }, 500);
+        });
+        });

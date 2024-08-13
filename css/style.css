@@ -124,6 +124,11 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-content a {
+    align-items: center;
 }
 
 .nav-bar-icon {
@@ -132,8 +137,8 @@ ul {
 
 .nav-bar-content-links {
     display: flex;
-    align-items: baseline;
-    width: 520px;
+    align-items: center;
+    width: 640px;
     justify-content: space-between;
 }
 
@@ -141,6 +146,13 @@ ul {
     font-family: var(--fonte-paragraph);
     font-size: 20px;
     color: var(--cor-terciaria);
+    position: relative;
+}
+
+li .links-nav {
+    font-size: 18px;
+    font-weight: 100;
+    padding-left: 1rem;
 }
 
 .links-nav-box {
@@ -151,6 +163,18 @@ ul {
     border-radius: 20px;
 }
 
+.nav-bar {
+        transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+.hide-nav {
+    transform: translateY(-100%);
+    transition: transform 0.35s ease-in-out;
+}
+
+.smooth-scroll {
+    transition: all 0.5s ease-in-out;
+  }
 
 
 /* Conteúdo Home */
@@ -467,7 +491,7 @@ ul {
 .slider-cont {
     position: relative;
     width: 100%;
-    height: 25rem; /* Added a fixed height */
+    height: 26rem; /* Added a fixed height */
     overflow: hidden;
     display: flex;
     flex-wrap: nowrap;
@@ -532,7 +556,7 @@ ul {
 
 .slider-box-content {
     width: 100%;
-    max-width: 45rem;
+    max-width: 47rem;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -541,14 +565,25 @@ ul {
 }
 
 .render-04 {
-    width: 15rem;
+    width: 16rem;
 }
 
 .slider-box-info {
-    width: 28rem;
+    width: 29rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.slider-box-info .paragraph {
+    font-size: 1.15rem;
+    font-weight: 200;
+}
+
+.paragraph-highlight {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'Outfit', Sans-Serif;
 }
 
 .slider-box-info .heading-2 {
@@ -572,10 +607,10 @@ ul {
 
 .cta-box {
     max-width: fit-content;
-    padding: 15px 35px;
+    padding: 12px 36px;
     background-color: var(--cor-secundaria);
     font-family: var(--fonte-heading-2);
-    font-size: 1.25rem;
+    font-size: 1.20rem;
     color: var(--cor-primaria);
     border-radius: .75rem;
 }

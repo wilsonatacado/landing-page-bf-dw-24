@@ -140,6 +140,10 @@
         color: var(--cor-terciaria);
     }
 
+    .links-nav-categories {
+        display: none;
+    }
+
 
 
     /* Home */

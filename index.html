@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/mobile.css">
     <link rel="stylesheet" href="/css/laptop.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/wilsonatacado/landing-page-bf-dw-24@0.0.6beta/js/tips.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/wilsonatacado/landing-page-bf-dw-24@0.0.6beta/js/script.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/wilsonatacado/landing-page-bf-dw-24@0.0.6beta/js/categories.js"></script>
+    <script type="module" src="/js/tips.js"></script>
+    <script type="module" src="/js/script.js"></script>
+    <script type="module" src="/js/categories.js"></script>
     <style>
         .modals-wrapper {
             display: none;
@@ -32,8 +33,9 @@
         <nav class="nav-bar-content">
             <a href="#"><img src="https://i.imgur.com/dUcf9OF.png" alt="Logo Distribuidora Wilson" class="nav-bar-icon"></a>
             <div class="nav-bar-content-links">
-                <a class="links-nav" href="https://www.wilsonatacado.com.br/sobre-nos">Categorias</a>
-                <a class="links-nav" href="https://www.wilsonatacado.com.br/contact">Contato</a>
+                <a class="links-nav" href="#categories">Categorias</a>
+                <a class="links-nav" href="#brands">Marcas</a>
+                <a class="links-nav" href="#contact">Contato</a>
                 <a class="links-nav-box" href="#final">Marque na Agenda</a>
             </div>
             <button class="nav-bar-menu-mobile">
@@ -118,13 +120,13 @@
         </article>
     </section>
 
-    <section class="categories">
+    <section class="categories" id="categories">
         <h1 class="heading-1">OFERTAS POR TEMPO <strong class="heading-highlight">LIMITADO!</strong></h1>
 
         <div class="cont-promo">
             <div class="promo-row">
                 <div class="case-promo">
-                    <div class="case-promo-content">
+                    <div class="case-promo-content" id="promo-trends">
                         <img src="/img/renders/category-render-trend.png" alt="Render 03" class="render-03">
                         <h2 class="heading-2">Tendências</h2>
                         <p class="paragraph-1">Está precisando de novas indicações para a sua loja?<br><br>Aqui na
@@ -141,7 +143,7 @@
                 </div>
 
                 <div class="case-promo">
-                    <div class="case-promo-content">
+                    <div class="case-promo-content" id="promo-tenis">
                         <img src="/img/renders/category-render-boots.png" alt="Render 03" class="render-03">
                         <h2 class="heading-2">Tênis & Botas</h2>
                         <p class="paragraph-1">A coleção indispensável para o inverno inclui o mix de tênis e botas,
@@ -164,17 +166,10 @@
 
             <div class="promo-row">
                 <div class="case-promo">
-                    <div class="case-promo-content">
+                    <div class="case-promo-content" id="promo-sale">
                         <img src="/img/renders/category-render-sale.png" alt="Render 03" class="render-03">
                         <h2 class="heading-2">Promoções</h2>
-                        <p class="paragraph-1">A marca Havaianas é uma referência notável quando se trata de calçados,
-                            sendo um produto excelente para comercializar no verão e ao longo do ano, pois é garantia de
-                            alta demanda contínua.
-                            <br>
-                            <br>
-                            Se você já é um revendedor de Havaianas, compreende do que estamos falando. Caso ainda não
-                            seja, recomendo estudar essa grande marca e, se possível, incluí-la em sua loja. Dessa
-                            forma, você poderá oferecer aos seus clientes o melhor do Brasil: as Havaianas!
+                        <p class="paragraph-1">Aumente suas margens de lucro e atraia mais clientes com nossa categoria de Promoções de Calçados no Atacado.<br><br>Esta é a oportunidade ideal para lojistas que desejam maximizar seus ganhos e oferecer produtos de qualidade a preços competitivos.
                         </p>
                     </div>
                     <div class="case-promo-cta-box">
@@ -187,7 +182,7 @@
                 </div>
 
                 <div class="case-promo">
-                    <div class="case-promo-content">
+                    <div class="case-promo-content" id="promo-baby">
                         <img src="/img/renders/category-render-baby.png" alt="Render 03" class="render-03">
                         <h2 class="heading-2">Infantil</h2>
                         <p class="paragraph-1">Se você é um revendedor que busca encantar pais e responsáveis com
@@ -209,7 +204,7 @@
 
             <div class="promo-row">
                 <div class="case-promo">
-                    <div class="case-promo-content">
+                    <div class="case-promo-content" id="promo-male">
                         <img src="/img/renders/category-render-male.png" alt="Render 03" class="render-03">
                         <h2 class="heading-2">Masculino</h2>
                         <p class="paragraph-1">Seja destaque na moda masculina, apresentando aos seus clientes as
@@ -231,7 +226,7 @@
                 </div>
 
                 <div class="case-promo">
-                    <div class="case-promo-content">
+                    <div class="case-promo-content" id="promo-female">
                         <img src="/img/renders/category-render-female.png" alt="Render 03" class="render-03">
                         <h2 class="heading-2">Feminino</h2>
                         <p class="paragraph-1">Nossa coleção é mais do que simplesmente sapatos; são expressões de
@@ -255,7 +250,7 @@
         <div id="promo-slider-cont"></div>
     </section>
 
-    <section class="brands">
+    <section class="brands" id="brands">
         <h1 class="heading-1">VEJA AS MARCAS <strong class="heading-highlight">MAIS VENDIDAS</strong></h1>
 
         <ul class="slider-cont">
@@ -265,9 +260,8 @@
                     <img class="render-04" src="https://i.imgur.com/66sqAxy.png" alt="Render 04">
                     <div class="slider-box-info">
                         <h3 class="heading-2">Havaianas</h3>
-                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="paragraph">Com uma paleta vibrante de cores e designs que vão do clássico ao ousado, Havaianas é mais do que um calçado – <span class="paragraph-highlight">é um estilo de vida.</span><br><br>
+                        Aproveite a Black Friday para criar <span class="paragraph-highlight">promoções irresistíveis</span> e veja seus clientes se encantarem!</p>
                         <a class="cta-box" href="#final">Clique Aqui</a>
                     </div>
                 </div>
@@ -278,10 +272,10 @@
                 <div class="slider-box-content">
                     <img class="render-04" src="https://i.imgur.com/66sqAxy.png" alt="Render 04">
                     <div class="slider-box-info">
-                        <h3 class="heading-2">Havaianas</h3>
-                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudgit
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h3 class="heading-2">Cartago</h3>
+                        <p class="paragraph">Focada em calçados masculinos, Cartago proporciona conforto e elegância para o dia a dia.<br><br>
+                        Seus produtos são ideais para lojistas que buscam atender um público masculino exigente, que valoriza <span class="paragraph-highlight">qualidade e estilo.</span>
+                        </p>
                         <a class="cta-box" href="#final">Clique Aqui</a>
                     </div>
                 </div>
@@ -292,10 +286,61 @@
                 <div class="slider-box-content">
                     <img class="render-04" src="https://i.imgur.com/66sqAxy.png" alt="Render 04">
                     <div class="slider-box-info">
-                        <h3 class="heading-2">Havaianas</h3>
-                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h3 class="heading-2">Ipanema</h3>
+                        <p class="paragraph">Seus designs inovadores são perfeitos para mulheres que buscam <span class="paragraph-highlight">estilo e conforto</span> em todas as ocasiões.<br><br>
+                        <span class="paragraph-highlight">Traga Ipanema para sua loja</span> e veja como seus clientes vão adorar a combinação de moda e sustentabilidade!</p>
+                        <a class="cta-box" href="#final">Clique Aqui</a>
+                    </div>
+                </div>
+                <button class="slider-box-arrow next"><i class="ri-arrow-right-double-line"></i></button>
+            </li>
+            <li class="slider-box">
+                <button class="slider-box-arrow prev"><i class="ri-arrow-left-double-line"></i></button>
+                <div class="slider-box-content">
+                    <img class="render-04" src="https://i.imgur.com/66sqAxy.png" alt="Render 04">
+                    <div class="slider-box-info">
+                        <h3 class="heading-2">Beira Rio</h3>
+                        <p class="paragraph">Ao trazer Beira Rio para sua loja, você oferece às suas clientes a oportunidade de se sentirem confiantes e estilosas em qualquer momento do dia.<br><br>
+                            <span class="paragraph-highlight">Aproveite a Black Friday</span> para destacar essas qualidades com ofertas especiais e <span class="paragraph-highlight">veja suas vendas crescerem!</span></p>
+                        <a class="cta-box" href="#final">Clique Aqui</a>
+                    </div>
+                </div>
+                <button class="slider-box-arrow next"><i class="ri-arrow-right-double-line"></i></button>
+            </li>
+            <li class="slider-box">
+                <button class="slider-box-arrow prev"><i class="ri-arrow-left-double-line"></i></button>
+                <div class="slider-box-content">
+                    <img class="render-04" src="https://i.imgur.com/66sqAxy.png" alt="Render 04">
+                    <div class="slider-box-info">
+                        <h3 class="heading-2">Moleca</h3>
+                        <p class="paragraph">Moleca é sinônimo de jovialidade e conforto, com calçados que seguem as <span class="paragraph-highlight">últimas tendências da moda.</span><br><br>
+                        Ideal para um público jovem e antenado, seus modelos versáteis são perfeitos para qualquer ocasião, sempre com muito estilo.</p>
+                        <a class="cta-box" href="#final">Clique Aqui</a>
+                    </div>
+                </div>
+                <button class="slider-box-arrow next"><i class="ri-arrow-right-double-line"></i></button>
+            </li>
+            <li class="slider-box">
+                <button class="slider-box-arrow prev"><i class="ri-arrow-left-double-line"></i></button>
+                <div class="slider-box-content">
+                    <img class="render-04" src="https://i.imgur.com/66sqAxy.png" alt="Render 04">
+                    <div class="slider-box-info">
+                        <h3 class="heading-2">Modare</h3>
+                        <p class="paragraph">Especializada em calçados de conforto, Modare é perfeita para mulheres que buscam bem-estar no dia a dia.<br><br>
+                        <span class="paragraph-highlight">Lojistas que oferecem Modare em suas lojas garantem produtos que combinam tecnologia de conforto com design moderno.</span></p>
+                        <a class="cta-box" href="#final">Clique Aqui</a>
+                    </div>
+                </div>
+                <button class="slider-box-arrow next"><i class="ri-arrow-right-double-line"></i></button>
+            </li>
+            <li class="slider-box">
+                <button class="slider-box-arrow prev"><i class="ri-arrow-left-double-line"></i></button>
+                <div class="slider-box-content">
+                    <img class="render-04" src="https://i.imgur.com/66sqAxy.png" alt="Render 04">
+                    <div class="slider-box-info">
+                        <h3 class="heading-2">Olympikus</h3>
+                        <p class="paragraph"> Olympikus é a <span class="paragraph-highlight">maior marca esportiva do Brasil</span>, sinônimo de performance e tecnologia.<br><br>
+                        Seus produtos são desenvolvidos para atender desde <span class="paragraph-highlight">atletas profissionais</span> até <span class="paragraph-highlight">entusiastas do esporte</span>, garantindo durabilidade e alto desempenho.</p>
                         <a class="cta-box" href="#final">Clique Aqui</a>
                     </div>
                 </div>
@@ -396,7 +441,7 @@
         </div>
     </section>
 
-    <section class="blog">
+    <section class="blog" id="contact">
         <h1 class="heading-1">APRENDA A <strong class="heading-highlight">VENDER MAIS</strong> EM NOSSO BLOG!</h1>
 
         <article class="content-blog">
