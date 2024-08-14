@@ -4,37 +4,37 @@ const categories = [
   {
     title: "Tendências",
     text:
-      "Está precisando de novas indicações para a sua loja?<br><br>Aqui na Wilson, você encontra diversos modelos no atacado. Aproveite para se preparar com as melhores tendências e aumentar a sua margem de lucro.",
+      "Está precisando de novas indicações para a sua loja?<br><br>Aqui na Wilson, você encontra diversos modelos no atacado. Aproveite para se preparar com as <span class='paragraph-highlight'> melhores tendências e aumentar a sua margem de lucro.</span>",
     image: "/img/renders/category-render-trend.png"
   },
   {
     title: "Tênis & Botas",
     text:
-      "A coleção indispensável para o inverno inclui o mix de tênis e botas, entre elas temos promoções. <br><br>Portanto, a melhor opção é se preparar com marcas renomadas de calçados fechados para aquecer suas vendas nesta estação.",
+      "A coleção indispensável para o inverno inclui o mix de tênis e botas, entre elas temos <span class='paragraph-highlight'>promoções</span>. <br><br> Portanto, a <span class='paragraph-highlight'>melhor opção</span> é se preparar com marcas renomadas de calçados fechados para <span class='paragraph-highlight'>aquecer suas vendas nesta estação.</span>",
     image: "/img/renders/category-render-boots.png"
   },
   {
     title: "Promoções",
     text:
-      "Aumente suas margens de lucro e atraia mais clientes com nossa categoria de Promoções de Calçados no Atacado.<br><br>Esta é a oportunidade ideal para lojistas que desejam maximizar seus ganhos e oferecer produtos de qualidade a preços competitivos.",
+      "Aumente suas margens de lucro</span> e atraia mais clientes com nossa categoria de <span class='paragraph-highlight'>Promoções de Calçados</span> no Atacado.<br><br>Esta é a oportunidade ideal para lojistas que desejam maximizar seus ganhos e oferecer <span class='paragraph-highlight'>produtos de qualidade a preços competitivos.</span>",
     image: "/img/renders/category-render-sale.png"
   },
   {
     title: "Infantil",
     text:
-      "Se você é um revendedor que busca encantar pais e responsáveis com produtos de qualidade, nosso catálogo de calçados infantis no atacado é a resposta. <br><br>Abasteça seu estoque!",
+      "Se você é um revendedor que busca encantar pais e responsáveis com produtos de qualidade, <span class='paragraph-highlight'>nosso catálogo de calçados infantis no atacado é a resposta.</span><br><br> Abasteça seu estoque!",
     image: "/img/renders/category-render-baby.png"
   },
   {
     title: "Masculino",
     text:
-      "Seja destaque na moda masculina, apresentando aos seus clientes as últimas tendências em calçados. <br><br>Impulsione suas vendas e faça com que cada passo seja uma declaração de estilo. Junte-se a nós no emocionante mundo dos calçados masculinos no atacado e dê aos seus clientes uma experiência única em moda para os pés. Compre no atacado!",
+      "Destaque-se na moda masculina com as últimas tendências em calçados. <span class='paragraph-highlight'>Aumente suas vendas</span> e transforme cada passo em um símbolo de estilo.<br><br> Entre no mundo dos calçados masculinos no atacado e <span class='paragraph-highlight'>ofereça aos seus clientes uma experiência única.</span> Compre no atacado!",
     image: "/img/renders/category-render-male.png"
   },
   {
     title: "Feminino",
     text:
-      "Nossa coleção é mais do que simplesmente sapatos; são expressões de estilo e personalidade. <br><br>Cada par é escolhido para elevar a confiança da mulher moderna, proporcionando conforto e elegância em cada passo. Adquira já no atacado!",
+      "Nossa coleção é mais do que simplesmente sapatos; <span class='paragraph-highlight'>são expressões de estilo e personalidade.</span><br><br>Cada par é escolhido para elevar a confiança da mulher moderna, proporcionando <span class='paragraph-highlight'>conforto e elegância</span> em cada passo. Adquira já no atacado!",
     image: "/img/renders/category-render-female.png"
   }
 ];

@@ -200,29 +200,32 @@
 
 
 
-    // Selecione a barra de navegação
-    const navBar = document.querySelector('.nav-bar');
+// Selecione a barra de navegação
+const navBar = document.querySelector('.nav-bar');
 
-    // Variável para armazenar a posição do scroll anterior
-    let lastScrollY = window.scrollY;
+// Variável para armazenar a posição do scroll anterior
+let lastScrollY = window.scrollY;
 
-    // Função para esconder ou mostrar a barra de navegação
-    function toggleNavBar() {
-    // Verifique se a página foi rolada para baixo ou para cima
-    if (window.scrollY > lastScrollY) {
-        // Se rolou para baixo, adicione a classe para esconder a barra
-        navBar.classList.add('hide-nav');
-    } else {
-        // Se rolou para cima, remova a classe para mostrar a barra
-        navBar.classList.remove('hide-nav');
+// Função para esconder ou mostrar a barra de navegação
+function toggleNavBar() {
+  // Verifique se a página foi rolada para baixo ou para cima
+  if (window.scrollY > lastScrollY) {
+    // Verifique se a largura da tela é maior ou igual a 768px
+    if (window.innerWidth >= 769) {
+      // Se rolou para baixo, adicione a classe para esconder a barra
+      navBar.classList.add('hide-nav');
     }
-    
-    // Atualize a posição do scroll anterior
-    lastScrollY = window.scrollY;
-    }
+  } else {
+    // Se rolou para cima, remova a classe para mostrar a barra
+    navBar.classList.remove('hide-nav');
+  }
+  
+  // Atualize a posição do scroll anterior
+  lastScrollY = window.scrollY;
+}
 
-    // Adicione o evento de rolagem à janela
-    window.addEventListener('scroll', toggleNavBar);
+// Adicione o evento de rolagem à janela
+window.addEventListener('scroll', toggleNavBar);
 
 
 

@@ -174,7 +174,11 @@ li .links-nav {
 
 .smooth-scroll {
     transition: all 0.5s ease-in-out;
-  }
+}
+
+.links-nav:hover {
+    color: var(--cor-secundaria);
+}
 
 
 /* Conteúdo Home */
@@ -198,6 +202,11 @@ li .links-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.home-content .paragraph-highlight {
+        font-size: 1.35rem;
+        font-weight: 600;
 }
 
 .home-content-right {
@@ -231,6 +240,7 @@ li .links-nav {
     font-family: var(--fonte-paragraph);
     font-size: 1.3rem;
     color: var(--cor-terciaria);
+    font-weight: 200;
 
 }
 
@@ -290,6 +300,7 @@ li .links-nav {
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 200;
 }
 
 .scroll-down-icon {
@@ -337,8 +348,13 @@ li .links-nav {
     width: 50%;
 }
 
+.info-content .paragraph-highlight {
+    font-size: 1.5rem;
+}
+
 .info-content .paragraph {
     font-size: 1.5rem;
+    font-weight: 200;
 }
 
 .info-content .cta-box {
@@ -383,7 +399,7 @@ li .links-nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 2rem;
     align-items: center;
     border: 2px solid #252525;
     border-radius: 1.5rem;
@@ -814,6 +830,7 @@ li .links-nav {
     height: 0;
     transition: 0.3s ease;
     text-align: left;
+    font-weight: 200;
 }
 
 .faq-arrow {
@@ -840,6 +857,11 @@ li .links-nav {
     font-family: var(--fonte-paragraph);
     color: var(--cor-terciaria);
     font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.faq-answer .paragraph {
+    font-weight: 200;
 }
 
 

@@ -48,6 +48,10 @@
         font-size: 1.2rem;
     }
 
+    .info-content .paragraph-highlight {
+        font-size: 1.25rem;
+    }
+
     .info-box-01, .info-box-02, .info-box-03 {
         gap: 0 3rem;
     }
@@ -91,7 +95,7 @@
     }
 
     .brands-mobile img:hover {
-        filter: invert(66%) sepia(300%) saturate(991%) hue-rotate(320deg) brightness(99%) contrast(214%);
+        filter: brightness(0) saturate(100%) invert(74%) sepia(52%) saturate(793%) hue-rotate(338deg) brightness(106%) contrast(104%);
         transform: scale(1.05);
         transition: transform .5s ease;
     }

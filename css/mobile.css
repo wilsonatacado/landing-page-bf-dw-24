@@ -180,7 +180,8 @@
     }
 
     .paragraph {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        font-weight: 200;
     }
 
     .render-01 {
@@ -212,7 +213,7 @@
     }
 
     .paragraph-1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
 
@@ -241,8 +242,12 @@
     }
 
     .info-content .paragraph {
-        font-size: 1rem;
+        font-size: 1.15rem;
         text-align: center;
+    }
+
+    .info-content .paragraph-highlight {
+        font-size: 1.2rem;
     }
 
     .info-content .cta-box {
@@ -347,6 +352,11 @@
         background: var(--cor-secundaria);
     }
 
+    .render-03 {
+        height: 35vw;
+        width: auto;
+    }
+
 
 
     /* Marcas */
@@ -381,7 +391,7 @@
     }
 
     .brands-mobile img:hover {
-        filter: invert(66%) sepia(300%) saturate(991%) hue-rotate(320deg) brightness(99%) contrast(214%);
+        filter: brightness(0) saturate(100%) invert(74%) sepia(52%) saturate(793%) hue-rotate(338deg) brightness(106%) contrast(104%);
         transform: scale(1.05);
         transition: transform .5s ease;
     }
@@ -419,7 +429,7 @@
     }
 
     .conditions-link {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
 
@@ -610,6 +620,7 @@
 
     .nav-footer a {
         text-align: center;
+        font-size: 1.1rem;
     }
 
     .footer-links-list.row {
@@ -745,8 +756,13 @@
     }
 
     .info-content .paragraph {
-        font-size: 1rem;
+        font-size: 1.15rem;
         text-align: start;
+        font-weight: 200;
+    }
+
+    .info-content .paragraph-highlight {
+        font-size: 1.20rem;
     }
 
     .content-blog {
