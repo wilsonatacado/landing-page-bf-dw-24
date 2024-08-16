@@ -184,6 +184,11 @@
         font-weight: 200;
     }
 
+    .home-content .paragraph-highlight {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
     .render-01 {
         height: auto;
     }
@@ -238,7 +243,7 @@
     }
 
     .render-02 {
-        width: 15rem;
+        width: 220px;
     }
 
     .info-content .paragraph {
@@ -487,7 +492,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding: 1.5rem;
+        padding: 3.5rem 1.5rem;
         align-items: center;
         border: 2px solid #252525;
         border-radius: 1.5rem;
@@ -527,7 +532,7 @@
     }
 
     .render-05 {
-        height: 9rem;
+        height: 5rem;
     }
      
 
@@ -739,11 +744,14 @@
         gap: 5rem 0;
     }
 
-
     .info-box-01, .info-box-03 {
         flex-direction: row-reverse;
         gap: 0 3rem;
 
+    }
+
+    .render-02 {
+        width: 40%;
     }
 
     .info-box-02 {

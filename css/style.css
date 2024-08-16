@@ -724,7 +724,7 @@ li .links-nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 1.5rem;
+    padding: 3.5rem 1.5rem;
     align-items: center;
     border: 2px solid #252525;
     border-radius: 1.5rem;
@@ -743,7 +743,7 @@ li .links-nav {
 
 .render-05 {
     width: auto;
-    height: 7.5rem;
+    height: 5rem;
 }
 
 .tips-box .heading-2 {
