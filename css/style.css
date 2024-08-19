@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Monument';
-    src: url('https://cdn.jsdelivr.net/gh/wilsonatacado/landing-page-bf-dw-24@0.1.3beta/fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+    src: url('https://cdn.jsdelivr.net/gh/wilsonatacado/landing-page-bf-dw-24@0.1.4beta/fonts/MonumentExtended-Ultrabold.otf') format('opentype');
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Monument Regular';
-    src: url('https://cdn.jsdelivr.net/gh/wilsonatacado/landing-page-bf-dw-24@0.1.3beta/fonts/MonumentExtended-Regular.otf') format('opentype');
+    src: url('https://cdn.jsdelivr.net/gh/wilsonatacado/landing-page-bf-dw-24@0.1.4beta/fonts/MonumentExtended-Regular.otf') format('opentype');
     font-style: normal;
 }
 
@@ -507,7 +507,7 @@ li .links-nav {
 .slider-cont {
     position: relative;
     width: 100%;
-    height: 26rem; /* Added a fixed height */
+    height: 30rem; /* Added a fixed height */
     overflow: hidden;
     display: flex;
     flex-wrap: nowrap;
@@ -553,6 +553,7 @@ li .links-nav {
     cursor: pointer;
     width: auto;
     height: 100%;
+    z-index: 20;
 }
 
 .slider-box-arrow i {
@@ -577,18 +578,24 @@ li .links-nav {
     display: flex;
     flex-direction: row;
     gap: 4rem;
-    justify-content: space-between;
+    justify-content: flex-end;
+    position: relative;
 }
 
 .render-04 {
-    width: 16rem;
+    height: 28rem;
+    position: absolute;
+    left: -60px;
+    top: -20px;
 }
 
 .slider-box-info {
-    width: 29rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1.5rem;
+
 }
 
 .slider-box-info .paragraph {
@@ -756,6 +763,10 @@ li .links-nav {
 
 .tips-box .paragraph-1 {
     font-size: 1rem;
+}
+
+.tips-box .paragraph-1 .paragraph-highlight{
+    font-size: 1.05rem;
 }
 
 

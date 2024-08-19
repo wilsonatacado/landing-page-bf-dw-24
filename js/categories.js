@@ -52,7 +52,7 @@ const casePromoSlider = `
             </div>
             <div class="case-promo-cta-box">
               <hr class="stroke-division">
-              <a href="#" class="case-promo-bottom">
+              <a href="https://www.wilsonatacado.com.br/" class="case-promo-bottom">
                 <p class="case-promo-bottom-text">Veja Aqui</p>
                 <i class="ri-arrow-right-up-line"></i>
               </a>

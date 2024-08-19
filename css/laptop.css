@@ -162,7 +162,7 @@
         justify-content: center;
         flex-direction: row;
         transition: transform 0.5s ease;
-        height: 25rem;
+        height: 27rem;
         position: relative;
     }
     
@@ -172,8 +172,8 @@
         backdrop-filter: blur(0.5rem);
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        padding: 1.5rem;
+        justify-content: center;
+        padding: 2.5rem;
         align-items: center;
         border: 2px solid #252525;
         border-radius: 1.5rem;
@@ -190,6 +190,19 @@
         -webkit-transition: -webkit-transform 0.5s ease;
         transition: 0.5s ease;
         border: 2px solid var(--cor-secundaria);
+    }
+
+    .tips ::part(pagination) {
+        bottom: 0;
+    }
+
+    .tips ::part(bullet) {
+        opacity: var(--swiper-pagination-bullet-opacity, 1);
+        background: var(--cor-terciaria);
+    }
+    .tips ::part(bullet-active) {
+        opacity: var(--swiper-pagination-bullet-opacity, 1);
+        background: var(--cor-secundaria);
     }
 
 }
@@ -216,4 +229,10 @@
         width: 90%!important;
     }
     
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-bar-content-links {
+        width: 70vw;
+    }
 }
