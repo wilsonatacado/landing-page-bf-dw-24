@@ -582,10 +582,52 @@ li .links-nav {
     position: relative;
 }
 
-.render-04 {
+.slider-img-havaianas {
     height: 28rem;
     position: absolute;
     left: -60px;
+    top: -20px;
+}
+
+.slider-img-cartago {
+    height: 28rem;
+    position: absolute;
+    left: -40px;
+    top: -20px;
+}
+
+.slider-img-ipanema {
+    height: 28rem;
+    position: absolute;
+    left: -40px;
+    top: -20px;
+}
+
+.slider-img-beirario {
+    height: 28rem;
+    position: absolute;
+    left: -40px;
+    top: -20px;
+}
+
+.slider-img-moleca {
+    height: 28rem;
+    position: absolute;
+    left: -40px;
+    top: -20px;
+}
+
+.slider-img-modare {
+    height: 28rem;
+    position: absolute;
+    left: -40px;
+    top: 0;
+}
+
+.slider-img-olympikus {
+    height: 28rem;
+    position: absolute;
+    left: -40px;
     top: -20px;
 }
 
