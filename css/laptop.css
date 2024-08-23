@@ -119,6 +119,19 @@
         height: 4rem;
     }
 
+    .content-blog .render-01 {
+        width: 50%;
+        height: auto;
+    }
+    
+    .content-blog-info .paragraph {
+        font-size: 1.20rem;
+    }
+    
+    .content-blog-info .paragraph-highlight {
+        font-size: 1.25rem;
+    }
+
 
 
 }

@@ -80,7 +80,7 @@ ul {
     padding: 0;
   }
 
-.info-section,.categories,.brands,.conditions,.tips,.blog,.faq {
+.info-section,.categories,.brands,.conditions,.tips,.blog,.final,.faq {
     width: 100%;
     max-width: var(--margin--zero);
     margin-right: auto;
@@ -830,9 +830,78 @@ li .links-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
+    width: 50%;
     gap: 4rem;
     align-items: baseline;
+}
+
+.content-blog .render-01 {
+    height: 540px;
+}
+
+.content-blog-info .paragraph {
+    font-size: 1.5rem;
+}
+
+.content-blog-info .paragraph-highlight {
+    font-size: 1.55rem;
+}
+
+
+
+/* FORM */
+
+
+
+.final-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.final-form {
+    width: 40%;
+    height: 32rem;
+    padding: 3rem;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+}
+
+.final-form input {
+    font-family: var(--fonte-paragraph);
+    font-size: 1.2rem;
+}
+
+.final-form label {
+    font-family: var(--fonte-paragraph)!important;
+    color: var(--cor-terciaria);
+    font-size: 1.2rem;
+    font-weight: 200;
+    position: relative;
+    top: 40px;
+    left: 16px;
+    transition: .2s ease-in-out;
+}
+
+.final-form label.focus {
+    position: relative;
+    top: 10px!important;
+    left: 0!important;
+    transition: 0.2s ease-in-out;
+}
+
+.final-form ::placeholder {
+    font-family: var(--fonte-paragraph);
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+.final-form input.has-text {
+    border: 2px solid var(--cor-secundaria)!important;
+    border-style: none none solid none!important;
+    transition: 0.5s ease;
 }
 
 
@@ -910,11 +979,21 @@ li .links-nav {
     font-family: var(--fonte-paragraph);
     color: var(--cor-terciaria);
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .faq-answer .paragraph {
     font-weight: 200;
+    font-size: 1.25rem;
+}
+
+.faq-item .faq-question .paragraph {
+    transition: 0.25s ease;
+}
+
+.faq-item.opened .faq-question .paragraph {
+    color: var(--cor-secundaria);
+    transition: 0.25s ease;
 }
 
 
@@ -1081,7 +1160,7 @@ li .links-nav {
 }
 
 .categories h1 {
-    width: 775px;
+    width: 725px;
     align-self: center;
 }
 

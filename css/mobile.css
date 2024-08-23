@@ -578,6 +578,21 @@
         font-size: 1.2rem;
     }
 
+    .content-blog .render-01 {
+        position: relative;
+        height: auto;
+        left: 10px;
+    }
+    
+    .content-blog-info .paragraph {
+        font-size: 1.20rem;
+    }
+    
+    .content-blog-info .paragraph-highlight {
+        font-size: 1.25rem;
+    }
+
+
 
 
     /* Faq */

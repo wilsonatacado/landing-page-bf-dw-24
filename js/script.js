@@ -259,3 +259,24 @@ window.addEventListener('scroll', toggleNavBar);
             }, 500);
         });
         });
+
+
+
+
+
+
+        const inputs = document.querySelectorAll('.input-field');
+
+        inputs.forEach(input => {
+          input.addEventListener('input', () => {
+            if (input.value !== '') {
+              input.classList.add('has-text');
+              const label = input.parentNode.parentNode.querySelector('.label-text label');
+              label.classList.add('focus');
+            } else {
+              input.classList.remove('has-text');
+              const label = input.parentNode.parentNode.querySelector('.label-text label');
+              label.classList.remove('focus');
+            }
+          });
+        });
