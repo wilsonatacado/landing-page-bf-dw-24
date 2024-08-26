@@ -264,19 +264,64 @@ window.addEventListener('scroll', toggleNavBar);
 
 
 
-
         const inputs = document.querySelectorAll('.input-field');
 
         inputs.forEach(input => {
           input.addEventListener('input', () => {
             if (input.value !== '') {
               input.classList.add('has-text');
-              const label = input.parentNode.parentNode.querySelector('.label-text label');
-              label.classList.add('focus');
+              const block = input.closest('.block');
+              const finalFormText = block.querySelector('.label-text .final-form-text');
+              finalFormText.classList.add('focus');
             } else {
               input.classList.remove('has-text');
-              const label = input.parentNode.parentNode.querySelector('.label-text label');
-              label.classList.remove('focus');
+              const block = input.closest('.block');
+              const finalFormText = block.querySelector('.label-text .final-form-text');
+              finalFormText.classList.remove('focus');
             }
           });
         });
+
+
+
+
+        const cnpjInput = document.querySelector('input[name="cmp9"]');
+        const phoneInput = document.querySelector('input[name="cmp12_NUM"]');
+        
+        cnpjInput.setAttribute('maxlength', 18); // 14 caracteres + 4 caracteres de formatação (pontos e traço)
+        phoneInput.setAttribute('maxlength', 15); // 11 caracteres + 4 caracteres de formatação (parênteses e traço)
+        
+        cnpjInput.addEventListener('input', (e) => {
+          const value = e.target.value.replace(/\D+/g, '');
+          if (value.length > 14) {
+            e.target.value = value.substring(0, 14);
+          }
+          const formattedValue = formatCnpj(value);
+          e.target.value = formattedValue;
+        });
+        
+        phoneInput.addEventListener('input', (e) => {
+          const value = e.target.value.replace(/\D+/g, '');
+          if (value.length > 11) {
+            e.target.value = value.substring(0, 11);
+          }
+          const formattedValue = formatPhone(value);
+          e.target.value = formattedValue;
+        });
+        
+        function formatCnpj(value) {
+          if (value.length <= 2) return value;
+          if (value.length <= 5) return `${value.substring(0, 2)}.${value.substring(2)}`;
+          if (value.length <= 8) return `${value.substring(0, 2)}.${value.substring(2, 5)}.${value.substring(5)}`;
+          if (value.length <= 12) return `${value.substring(0, 2)}.${value.substring(2, 5)}.${value.substring(5, 8)}/${value.substring(8)}`;
+          if (value.length <= 14) return `${value.substring(0, 2)}.${value.substring(2, 5)}.${value.substring(5, 8)}/${value.substring(8, 12)}-${value.substring(12)}`;
+          return value;
+        }
+        
+        function formatPhone(value) {
+          if (value.length === 0) return '';
+          if (value.length <= 2) return `(${value}`;
+          if (value.length <= 6) return `(${value.substring(0, 2)}) ${value.substring(2)}`;
+          if (value.length <= 10) return `(${value.substring(0, 2)}) ${value.substring(2, 6)}-${value.substring(6)}`;
+          return `(${value.substring(0, 2)}) ${value.substring(2, 7)}-${value.substring(7)}`;
+        }

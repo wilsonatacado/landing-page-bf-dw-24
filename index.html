@@ -454,7 +454,9 @@
     </section>
 
     <section class="final" id="final">
-        <h1 class="heading-1">APRENDA A <strong class="heading-highlight">VENDER MAIS</strong> EM NOSSO BLOG!</h1>
+        <h1 class="heading-1">NÃO PERCA ESSA <strong class="heading-highlight">OPORTUNIDADE!</strong></h1>
+
+        <p class="paragraph-1">Fique por dentro das ofertas especiais e novidades da loja!<br><br>Preencha os campos abaixo para receber informações antecipadas</p>
 
         <article class="final-container">
             <img src="/img/renders/blog-render-dr-varejo.png" class="render-01" alt="Render 06">
@@ -467,7 +469,7 @@
                     <div class="DinamizeDivCaptchaMessage">Captcha obrigatório</div>
                     <div class="DinamizeDivMessageAlert"></div>
                         <div class="DinamizeDivMessageSuccess">Seu e-mail foi cadastrado com sucesso!</div>
-                        <div class="DinamizeDivMessageError"></div>
+                        <div class="DinamizeDivMessageError">Preencha os campos corretamente.</div>
                         <input type="hidden" name="text-confirmation" value="U2V1IGUtbWFpbCBmb2kgY2FkYXN0cmFkbyBjb20gc3VjZXNzbyE="/>
                         <input type="hidden" name="text-error" value=""/>
                         <input type="hidden" name="text-alert" value=""/>
@@ -475,30 +477,30 @@
                         <div class="">
                             <div class="block">
                                 <div class="vertical divlabel label-text">
-                                    <label>Nome</label>
+                                    <label class="final-form-text">Nome</label>
                                 </div>
                                 <div class="vertical divinput">
-                                    <input type="text" name="cmp2"  placeholder="Nome" format=""  class="type_VC   input-field" maxlength="80" />
+                                    <input type="text" name="cmp2"  placeholder="" format=""  class="type_VC   input-field" maxlength="80" />
                                 </div>
                             </div>
                             <div class="block">
                                 <div class="vertical divlabel label-text">
-                                    <label>E-mail</label>
+                                    <label class="final-form-text">E-mail</label>
                                 </div>
-                                <div class="vertical divinput"><input type="text" name="cmp1"  placeholder="E-mail" format=""  class="type_EMAIL field-required  input-field" maxlength="80" />
+                                <div class="vertical divinput"><input type="text" name="cmp1"  placeholder="" format=""  class="type_EMAIL field-required  input-field" maxlength="80" />
                                 </div>
                             </div>
                             <div class="block">
                                 <div class="vertical divlabel label-text">
-                                    <label>CNPJ</label>
+                                    <label class="final-form-text">CNPJ</label>
                                 </div>
                                 <div class="vertical divinput">
-                                <input type="text" name="cmp9"  placeholder="CNPJ" format=""  class="type_VC field-required  input-field" maxlength="80" />
+                                <input type="text" name="cmp9"  placeholder="" format=""  class="type_VC field-required  input-field" maxlength="80" />
                                 </div>
                             </div>
                             <div class="block">
                                 <div class="vertical divlabel label-text">
-                                    <label>Nº Telefone</label>
+                                    <label class="final-form-text">Nº Telefone</label>
                                 </div>
                                 <div class="vertical divinput">
                                     <div class="div_PHN hidden_DDI">
@@ -506,28 +508,35 @@
                                             <input type="text" name="cmp12_DDI" hd-name="cmp12" maxlength="5" placeholder="+1" value="55" class="type_PHN_DDI field-required input-field " />
                                         </div>
                                         <div class="div_PHN_NUM">
-                                            <input type="text" name="cmp12_NUM" hd-name="cmp12" maxlength="20" placeholder="(00) 0000-0000" class="type_PHN_NUM field-required input-field " />
+                                            <input type="text" name="cmp12_NUM" hd-name="cmp12" maxlength="20" placeholder="" class="type_PHN_NUM field-required input-field " />
                                         </div>
                                         <input type="hidden" name="cmp12" />
                                     </div>
                                 </div>
                             </div>
                             <div class="block">
-                                <div class="vertical divlabel label-text">
-                                    <label>Tipo de Loja</label>
-                                </div>
-                                <div class="vertical divinput">
-                                    <select name="cmp10" class="type_LVU field-required input-field ">
-                                        <option value="">Selecione</option>
-                                        <option value="Física">Física</option>
-                                        <option value="Virtual">Virtual</option>
-                                        <option value="Virtual e Física">Virtual e Física</option>
-                                    </select>
-                                </div>
+                                <div class="block">
+                                    <div class="vertical divlabel">
+                                      <div class="final-form-checkbox-text">Tipo de Loja</div>
+                                    </div>
+                                    <div class="vertical divinput">
+                                        <div class="checkbox-group">
+                                            <label>Física
+                                                <input type="radio" name="cmp10" value="Física">
+                                            </label>
+                                            <label>Virtual
+                                                <input type="radio" name="cmp10" value="Virtual">
+                                            </label>
+                                            <label>Virtual e Física
+                                                <input type="radio" name="cmp10" value="Virtual e Física">
+                                            </label>
+                                        </div>
+                                    </div>
+                                  </div>
                             </div>
                             <div class="block">
-                                <div class="vertical class1 submit submit-button-td">
-                                    <input type="submit" value="Cadastre-se" original-value="Cadastre-se" class="dinSubmit submit-btn" />
+                                <div class="vertical class3 submit submit-button-td">
+                                    <input type="submit" value="Cadastre-se" original-value="Cadastre-se" class="dinSubmit submit-btn " />
                                     <div class="spinner">
                                         <div class="bounce1"></div>
                                         <div class="bounce2"></div>
