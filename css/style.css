@@ -853,7 +853,12 @@ li .links-nav {
 
 
 .final .paragraph-1 {
-    font-size: 1.5rem;
+    font-size: 1.55rem;
+}
+
+.final-break {
+    display: block;
+    height: 1rem;
 }
 
 .final-container {
@@ -863,7 +868,6 @@ li .links-nav {
 }
 
 .final-form {
-    width: 40%;
     height: fit-content;
     padding: 3rem;
     border: 2px solid var(--cor-secundaria);

@@ -1,6 +1,6 @@
 @media screen and (min-width:769px) and (max-width: 1280px) {
 
-    .home-content,.nav-bar-content,.info-section,.categories,.conditions,.tips,.blog,.faq,.footer-contact,.footer-social-media,.footer-about,.footer-links {
+    .home-content,.nav-bar-content,.info-section,.categories,.conditions,.tips,.blog,.final,.faq,.footer-contact,.footer-social-media,.footer-about,.footer-links {
         width: 100%;
         max-width: var(--margin--mobile);
         margin-right: auto;
