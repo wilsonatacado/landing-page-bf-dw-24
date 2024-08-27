@@ -1,6 +1,18 @@
 @media screen and (min-width:769px) and (max-width: 1280px) {
 
-    .home-content,.nav-bar-content,.info-section,.categories,.conditions,.tips,.blog,.final,.faq,.footer-contact,.footer-social-media,.footer-about,.footer-links {
+    .home-content,
+    .nav-bar-content,
+    .info-section,
+    .categories,
+    .conditions,
+    .tips,
+    .blog,
+    .final,
+    .faq,
+    .footer-contact,
+    .footer-social-media,
+    .footer-about,
+    .footer-links {
         width: 100%;
         max-width: var(--margin--mobile);
         margin-right: auto;
@@ -52,13 +64,16 @@
         font-size: 1.25rem;
     }
 
-    .info-box-01, .info-box-02, .info-box-03 {
+    .info-box-01,
+    .info-box-02,
+    .info-box-03 {
         gap: 0 3rem;
     }
 
     .cont-promo {
         gap: 3rem 0;
     }
+
     .promo-row {
         gap: 0 2rem;
     }
@@ -102,7 +117,7 @@
 
     .conditions-cont {
         flex-wrap: wrap;
-        gap: 3rem 0; 
+        gap: 3rem 0;
         max-width: 32rem;
     }
 
@@ -123,11 +138,11 @@
         width: 50%;
         height: auto;
     }
-    
+
     .content-blog-info .paragraph {
         font-size: 1.20rem;
     }
-    
+
     .content-blog-info .paragraph-highlight {
         font-size: 1.25rem;
     }
@@ -152,7 +167,8 @@
         max-width: unset;
     }
 
-    .tips .heading-1, .tips .paragraph {
+    .tips .heading-1,
+    .tips .paragraph {
         max-width: var(--margin--mobile);
         margin-left: auto;
         margin-right: auto;
@@ -178,7 +194,7 @@
         height: 27rem;
         position: relative;
     }
-    
+
     .tips-slider {
         height: 25rem;
         background: rgba(0, 0, 0, 0.2);
@@ -213,6 +229,7 @@
         opacity: var(--swiper-pagination-bullet-opacity, 1);
         background: var(--cor-terciaria);
     }
+
     .tips ::part(bullet-active) {
         opacity: var(--swiper-pagination-bullet-opacity, 1);
         background: var(--cor-secundaria);
@@ -223,25 +240,25 @@
 @media screen and (max-width: 900px) {
 
     .categories h1 {
-        width: 90%!important;
+        width: 90% !important;
     }
-    
+
     .brands h1 {
-        width: 90%!important;
+        width: 90% !important;
     }
-    
+
     .conditions h1 {
-        width: 90%!important;
+        width: 90% !important;
     }
-    
+
     .tips h1 {
-        width: 90%!important;
+        width: 90% !important;
     }
-    
+
     .faq h1 {
-        width: 90%!important;
+        width: 90% !important;
     }
-    
+
 }
 
 @media screen and (max-width: 1024px) {

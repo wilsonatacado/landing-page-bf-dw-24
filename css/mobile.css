@@ -11,7 +11,12 @@
         overflow-x: hidden;
     }
 
-    .info-section,.categories,.conditions,.blog,.final,.faq {
+    .info-section,
+    .categories,
+    .conditions,
+    .blog,
+    .final,
+    .faq {
         width: 100%;
         max-width: var(--margin--mobile);
         margin-right: auto;
@@ -34,7 +39,7 @@
         width: 100vw;
         position: fixed;
         padding: 1.5rem 0;
-        background-color: rgba(0,0,0,.5);
+        background-color: rgba(0, 0, 0, .5);
         backdrop-filter: unset;
     }
 
@@ -75,8 +80,8 @@
         top: 0;
         height: 200vh;
         right: 0;
-        background-color: rgba(0,0,0,1);
-        
+        background-color: rgba(0, 0, 0, 1);
+
         transform: translateX(300px);
         visibility: hidden;
         transition: transform 0.5s ease-in-out, visibility 1s;
@@ -89,6 +94,7 @@
         opacity: 0%;
         transition: .5s ease-in-out;
     }
+
     .menu-fade-bg.show {
         left: 0;
         top: 0;
@@ -127,7 +133,7 @@
         height: 6.5rem;
 
     }
-    
+
     .nav-bar-menu-mobile-dropdown.show {
         visibility: visible;
         transform: translateX(0);
@@ -231,7 +237,9 @@
         padding: 2rem 0;
     }
 
-    .info-box-01,.info-box-02,.info-box-03 {
+    .info-box-01,
+    .info-box-02,
+    .info-box-03 {
         flex-direction: column-reverse;
         gap: 2rem 0;
     }
@@ -302,7 +310,7 @@
     .case-slider {
         width: 100%;
         height: 40em;
-        background: rgba(0,0,0,0.2);
+        background: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(.5rem);
         display: flex;
         flex-direction: column;
@@ -352,6 +360,7 @@
         opacity: var(--swiper-pagination-bullet-opacity, 1);
         background: var(--cor-terciaria);
     }
+
     .categories ::part(bullet-active) {
         opacity: var(--swiper-pagination-bullet-opacity, 1);
         background: var(--cor-secundaria);
@@ -409,7 +418,7 @@
 
     .conditions-cont {
         flex-wrap: wrap;
-        gap: 3rem 0; 
+        gap: 3rem 0;
     }
 
     .conditions-box {
@@ -457,7 +466,8 @@
         gap: 2rem;
     }
 
-    .tips .heading-1, .tips .paragraph {
+    .tips .heading-1,
+    .tips .paragraph {
         max-width: var(--margin--mobile);
         margin-left: auto;
         margin-right: auto;
@@ -475,7 +485,7 @@
     .tips-slider-cont {
         display: flex;
     }
-    
+
     .tips-slider-wrapper {
         display: flex;
         justify-content: center;
@@ -484,7 +494,7 @@
         height: 27rem;
         position: relative;
     }
-    
+
     .tips-slider {
         height: 25rem;
         background: rgba(0, 0, 0, 0.2);
@@ -518,7 +528,7 @@
     .swiper-pagination-bullet-active {
         background: var(--cor-secundaria);
     }
-    
+
     .tips-slider .heading-2 {
         align-content: center;
         font-size: 1.25rem;
@@ -545,6 +555,7 @@
         opacity: var(--swiper-pagination-bullet-opacity, 1);
         background: var(--cor-terciaria);
     }
+
     .tips ::part(bullet-active) {
         opacity: var(--swiper-pagination-bullet-opacity, 1);
         background: var(--cor-secundaria);
@@ -553,7 +564,7 @@
     .render-05 {
         height: 5rem;
     }
-     
+
 
 
     /* Blog */
@@ -583,11 +594,11 @@
         height: auto;
         left: 10px;
     }
-    
+
     .content-blog-info .paragraph {
         font-size: 1.20rem;
     }
-    
+
     .content-blog-info .paragraph-highlight {
         font-size: 1.25rem;
     }
@@ -632,7 +643,10 @@
         gap: 3rem 0;
     }
 
-    .footer-links,.footer-contact,.footer-social-media,.footer-about {
+    .footer-links,
+    .footer-contact,
+    .footer-social-media,
+    .footer-about {
         max-width: var(--margin--mobile);
         margin-left: auto;
         margin-right: auto;
@@ -689,41 +703,48 @@
         gap: 0 10%;
         width: 100%;
     }
-    
+
 }
 
-@media screen  and (max-width:375px) and (orientation:portrait) {
+@media screen and (max-width:375px) and (orientation:portrait) {
 
     .home-content-right p {
         font-size: 1rem;
         text-align: center;
     }
+
     .heading {
         font-size: 1.5rem;
     }
+
     .heading-1 {
         font-size: 1.5rem;
     }
+
     .heading-highlight {
         font-size: 1.5rem;
     }
+
     .footer-links-list.flex {
         gap: 0 5%;
         width: 100%;
     }
+
     .timer-box {
         padding: .4rem .6rem;
     }
+
     .conditions-box {
         width: 45%;
         height: 15rem;
     }
+
     .footer-links-list.row .nav-footer {
         font-size: .9rem;
     }
 }
 
-@media screen  and (max-width:425px) and (orientation:portrait) {
+@media screen and (max-width:425px) and (orientation:portrait) {
 
     .final-form {
         height: fit-content;
@@ -736,7 +757,7 @@
     }
 
     .final-form form {
-        width: 56vw!important;
+        width: 56vw !important;
     }
 
     form.formIntegration2 div.vertical {
@@ -751,7 +772,10 @@
         border-radius: .5rem;
     }
 
-    form.formIntegration2 .DinamizeDivMessageSuccess, form.formIntegration2 .DinamizeDivMessageAlert, form.formIntegration2 .DinamizeDivMessageError, form.formIntegration2 .DinamizeDivCaptchaMessage {
+    form.formIntegration2 .DinamizeDivMessageSuccess,
+    form.formIntegration2 .DinamizeDivMessageAlert,
+    form.formIntegration2 .DinamizeDivMessageError,
+    form.formIntegration2 .DinamizeDivCaptchaMessage {
         font-size: 1rem;
         font-family: var(--fonte-paragraph);
         padding: 15px;
@@ -760,7 +784,7 @@
 
 }
 
-@media screen and (min-width:426px) and (max-width: 768px)  and (orientation:portrait){
+@media screen and (min-width:426px) and (max-width: 768px) and (orientation:portrait) {
 
     main {
         min-height: unset;
@@ -810,7 +834,7 @@
     }
 
     .home-content {
-    gap: 2rem 0;
+        gap: 2rem 0;
     }
 
 }
@@ -821,7 +845,8 @@
         gap: 5rem 0;
     }
 
-    .info-box-01, .info-box-03 {
+    .info-box-01,
+    .info-box-03 {
         flex-direction: row-reverse;
         gap: 0 3rem;
 
@@ -881,10 +906,9 @@
     .conditions-box-info .paragraph-1 {
         font-size: 1rem;
     }
-    
+
     .conditions-link {
         font-size: 1rem;
     }
-    
+
 }
-    
