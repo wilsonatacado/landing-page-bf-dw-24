@@ -53,7 +53,7 @@ const casePromoSlider = `
           <swiper-slide class="case-slider">
             <div class="case-promo-content">
               <img src="${category.image}" alt="${category.title}" class="render-03">
-              <h2 class="heading-2">${category.title}</h2>
+              <h3 class="heading-2">${category.title}</h3>
               <p class="paragraph-1">${category.text}</p>
             </div>
             <div class="case-promo-cta-box">

@@ -147,6 +147,10 @@
         font-size: 1.25rem;
     }
 
+    .render-06 {
+        display: none;
+    }
+
 
 
 }
@@ -239,23 +243,23 @@
 
 @media screen and (max-width: 900px) {
 
-    .categories h1 {
+    .categories h2 {
         width: 90% !important;
     }
 
-    .brands h1 {
+    .brands h2 {
         width: 90% !important;
     }
 
-    .conditions h1 {
+    .conditions h2 {
         width: 90% !important;
     }
 
-    .tips h1 {
+    .tips h2 {
         width: 90% !important;
     }
 
-    .faq h1 {
+    .faq h2 {
         width: 90% !important;
     }
 

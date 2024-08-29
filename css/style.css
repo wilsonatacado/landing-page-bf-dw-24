@@ -44,6 +44,10 @@ body {
     overflow-x: hidden;
 }
 
+h2 {
+    display: unset;
+}
+
 ::-webkit-scrollbar {
     width: .6rem;
 }
@@ -157,9 +161,8 @@ ul {
 }
 
 li .links-nav {
-    font-size: 18px;
-    font-weight: 100;
-    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 200;
 }
 
 .links-nav-box {
@@ -597,6 +600,7 @@ li .links-nav {
     position: absolute;
     left: -60px;
     top: -20px;
+    user-select: none;
 }
 
 .slider-img-cartago {
@@ -604,6 +608,7 @@ li .links-nav {
     position: absolute;
     left: -40px;
     top: -20px;
+    user-select: none;
 }
 
 .slider-img-ipanema {
@@ -611,6 +616,7 @@ li .links-nav {
     position: absolute;
     left: -40px;
     top: -20px;
+    user-select: none;
 }
 
 .slider-img-beirario {
@@ -618,6 +624,7 @@ li .links-nav {
     position: absolute;
     left: -40px;
     top: -20px;
+    user-select: none;
 }
 
 .slider-img-moleca {
@@ -625,6 +632,7 @@ li .links-nav {
     position: absolute;
     left: -40px;
     top: -20px;
+    user-select: none;
 }
 
 .slider-img-modare {
@@ -632,6 +640,7 @@ li .links-nav {
     position: absolute;
     left: -40px;
     top: 0;
+    user-select: none;
 }
 
 .slider-img-olympikus {
@@ -639,6 +648,7 @@ li .links-nav {
     position: absolute;
     left: -40px;
     top: -20px;
+    user-select: none;
 }
 
 .slider-box-info {
@@ -874,7 +884,8 @@ li .links-nav {
 .final-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .final-form {
@@ -1002,6 +1013,15 @@ input:-webkit-autofill:active {
     color: var(--cor-terciaria) !important;
     appearance: unset !important;
 
+}
+
+.render-06 {
+    position: relative;
+    width: 540px;
+    height: 100%;
+    left: 2vw;
+    z-index: 5;
+    user-select: none;
 }
 
 
@@ -1262,27 +1282,42 @@ input:-webkit-autofill:active {
     }
 }
 
-.categories h1 {
+.categories h2 {
     width: 725px;
     align-self: center;
 }
 
-.brands h1 {
+.brands h2 {
     width: 621px;
     align-self: center;
 }
 
-.conditions h1 {
+.conditions h2 {
     width: 496px;
     align-self: center;
 }
 
-.tips h1 {
+.tips h2 {
     width: 875px;
     align-self: center;
 }
 
-.faq h1 {
+.faq h2 {
     width: 480px;
     align-self: center;
 }
+
+.info-box-01, .info-box-02, .info-box-03, h2, .promo-row, .brands-mobile, .conditions-cont, .tips.paragraph, .tips-box, .content-blog, .faq-selector {
+    visibility: hidden;
+    transition: transform 2s cubic-bezier(0, 0.77, 0.36, 1), opacity 1s ease;
+    transform: translateX(-200px);
+    opacity: 0;
+}
+
+.animate {
+    visibility: visible!important;
+    transition: transform 2s cubic-bezier(0, 0.77, 0.36, 1), opacity 1s ease;
+    transform: translateX(0px);
+    opacity: 1;
+}
+
