@@ -1,13 +1,14 @@
-@media screen and (max-width:768px) and (orientation:portrait) {
+@media screen and (max-width:768px) {
 
-    .lp-bg {
-        background-color: var(--cor-primaria);
-        background-image: url(https://i.imgur.com/iMKHoLc.png);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position: center;
-        z-index: -9999;
-        overflow-x: hidden;
+
+    body {
+        background-color: var(--cor-primaria) !important;
+        background-image: url(https://i.imgur.com/iMKHoLc.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: 100% 100% !important;
+        background-position: center !important;
+        z-index: -9999 !important;
+        overflow-x: hidden !important;
     }
 
     .info-section,
@@ -714,7 +715,7 @@
 
 }
 
-@media screen and (max-width:375px) and (orientation:portrait) {
+@media screen and (max-width:375px) {
 
     .home-content-right p {
         font-size: 1rem;
@@ -752,7 +753,7 @@
     }
 }
 
-@media screen and (max-width:425px) and (orientation:portrait) {
+@media screen and (max-width:425px) {
 
     .final-form {
         height: fit-content;
@@ -792,7 +793,7 @@
 
 }
 
-@media screen and (min-width:426px) and (max-width: 768px) and (orientation:portrait) {
+@media screen and (min-width:426px) and (max-width: 768px) {
 
     main {
         min-height: unset;
