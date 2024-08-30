@@ -229,12 +229,12 @@ inputs.forEach(input => {
     if (input.value !== '') {
       input.classList.add('has-text');
       const block = input.closest('.block');
-      const finalFormText = block.querySelector('.label-text .final-form-text');
+      const finalFormText = block.querySelector('.label-text-dinamize .final-form-text');
       finalFormText.classList.add('focus');
     } else {
       input.classList.remove('has-text');
       const block = input.closest('.block');
-      const finalFormText = block.querySelector('.label-text .final-form-text');
+      const finalFormText = block.querySelector('.label-text-dinamize .final-form-text');
       finalFormText.classList.remove('focus');
     }
   });
