@@ -195,7 +195,7 @@ window.addEventListener('scroll', toggleNavBar);
 
 
 
-const links = document.querySelectorAll('.links-nav');
+const links = document.querySelectorAll('[href^="#"]');
 
 links.forEach((link) => {
   link.addEventListener('click', (e) => {
@@ -304,7 +304,7 @@ const options = {
 
 const observer = new IntersectionObserver(callback, options);
 
-const elementosParaObservar = document.querySelectorAll('.info-box-01, .info-box-02, h2, .info-box-03, .promo-row, .promo-slider-cont, .brands-mobile, .conditions-cont, .tips.paragraph, .tips-box, .content-blog, .faq-selector');
+const elementosParaObservar = document.querySelectorAll('.info-box-01, .info-box-02, h2, .info-box-03, .promo-row, .promo-slider-cont, .brands-mobile, .conditions-cont, .tips.paragraph, .tips-box, .content-blog, p, .faq-selector');
 
 elementosParaObservar.forEach(elemento => {
   observer.observe(elemento);
