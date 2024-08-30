@@ -32,7 +32,7 @@ var countdownfunction = setInterval(function () {
   document.getElementById("hrs").innerHTML = hours;
   document.getElementById("min").innerHTML = minutes;
   document.getElementById("seg").innerHTML = seconds;
-  
+
   if (distance < 0) {
     clearInterval(countdownfunction);
     document.getElementById("day").innerHTML = "";
@@ -309,3 +309,26 @@ const elementosParaObservar = document.querySelectorAll('.info-box-01, .info-box
 elementosParaObservar.forEach(elemento => {
   observer.observe(elemento);
 });
+
+
+
+
+const icon = document.querySelector('.scroll-down-icon');
+
+function animateIcon() {
+  let posY = 0;
+
+  function animate() {
+    posY += 2;
+
+    icon.style.transform = `translateY(${posY}px)`;
+
+    if (posY < 20) {
+      requestAnimationFrame(animate);
+    }
+  }
+
+  animate();
+}
+
+icon.addEventListener('load', animateIcon);
