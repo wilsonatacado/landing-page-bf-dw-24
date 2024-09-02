@@ -162,7 +162,7 @@
     }
 
     .home-content {
-        padding-top: 3rem;
+        padding-top: 5rem;
         max-width: var(--margin--mobile);
         flex-direction: column-reverse;
         justify-content: flex-end;
@@ -197,7 +197,7 @@
     }
 
     .render-01 {
-        height: auto;
+        height: 35%;
     }
 
 
@@ -497,17 +497,17 @@
         justify-content: center;
         flex-direction: row;
         transition: transform 0.5s ease;
-        height: 27rem;
+        height: 28rem;
         position: relative;
     }
 
     .tips-slider {
-        height: 25rem;
+        height: 26rem;
         background: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(0.5rem);
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         padding: 2.5rem 1.5rem;
         align-items: center;
         border: 2px solid #252525;
@@ -537,7 +537,7 @@
 
     .tips-slider .heading-2 {
         align-content: center;
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         text-align: center;
         width: auto;
         height: 4.5rem;
@@ -719,7 +719,7 @@
 @media screen and (max-width:375px) {
 
     .home-content-right p {
-        font-size: 1rem;
+        font-size: 1.15rem;
         text-align: center;
     }
 
@@ -805,7 +805,6 @@
     }
 
     .banner-home {
-        justify-content: flex-end;
         padding-bottom: 5rem;
     }
 

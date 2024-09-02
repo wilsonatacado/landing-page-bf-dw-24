@@ -319,16 +319,16 @@ function animateIcon() {
   let posY = 0;
 
   function animate() {
-    posY += 2;
+    posY += 5;
 
     icon.style.transform = `translateY(${posY}px)`;
 
     if (posY < 20) {
-      requestAnimationFrame(animate);
+      requestAnimationFrame(animate); // Pass the animate function as a callback
     }
   }
 
   animate();
 }
 
-icon.addEventListener('load', animateIcon);
+document.addEventListener('DOMContentLoaded', animateIcon); // Use DOMContentLoaded instead of load
