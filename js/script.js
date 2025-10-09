@@ -19,7 +19,11 @@ document.addEventListener('click', (e) => {
 
 
 
+<<<<<<< HEAD
 var countDownDate = new Date("Nov 1, 2025 00:00:00").getTime();
+=======
+var countDownDate = new Date("Nov 1, 2024 00:00:00").getTime();
+>>>>>>> bf7f7ebac0619a36eec0d31b0cc2d0580a3b5b0b
 var countdownfunction = setInterval(function () {
   var now = new Date().getTime();
   var distance = countDownDate - now;
