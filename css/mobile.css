@@ -809,7 +809,6 @@
     }
 
     .home-content {
-        padding-top: 8rem;
         max-width: var(--margin--mobile);
         flex-direction: column-reverse;
         justify-content: flex-end;
