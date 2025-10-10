@@ -159,10 +159,10 @@
 
     .banner-home {
         gap: 0;
+        padding-top: 5rem;
     }
 
     .home-content {
-        padding-top: 5rem;
         max-width: var(--margin--mobile);
         flex-direction: column-reverse;
         justify-content: flex-end;
@@ -187,12 +187,12 @@
     }
 
     .paragraph {
-        font-size: 1.2rem;
+        font-size: 1.2rem!important;
         font-weight: 200;
     }
 
     .home-content .paragraph-highlight {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         font-weight: 600;
     }
 
@@ -235,7 +235,7 @@
 
 
     .info-section {
-        padding: 2rem 0;
+        padding: 4rem 0;
     }
 
     .info-box-01,
@@ -256,7 +256,7 @@
     }
 
     .info-content .paragraph {
-        font-size: 1.15rem;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -310,7 +310,7 @@
 
     .case-slider {
         width: 100%;
-        height: 40em;
+        height: 38em;
         background: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(.5rem);
         display: flex;
@@ -325,6 +325,10 @@
         transform: scale(0.9);
         -webkit-transition: -webkit-transform 0.5s ease;
         transition: 0.5s ease;
+    }
+
+    .case-promo {
+        height: 38rem;
     }
 
     .case-promo-content {
@@ -352,7 +356,6 @@
         transform: 1.05;
     }
 
-
     .categories ::part(pagination) {
         bottom: 0;
     }
@@ -368,8 +371,16 @@
     }
 
     .render-03 {
-        height: 35vw;
-        width: auto;
+        height: auto;
+        width: 50%;
+    }
+
+    .case-promo-img-box {
+        height: 12rem;
+    }
+
+    .promo-slider-cont .paragraph-highlight {
+        font-size: 1.2rem;
     }
 
 
@@ -602,11 +613,11 @@
     }
 
     .content-blog-info .paragraph {
-        font-size: 1.20rem;
+        font-size: 1rem;
     }
 
     .content-blog-info .paragraph-highlight {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
     }
 
 
@@ -635,12 +646,12 @@
     }
 
     .faq-item .paragraph {
-        font-size: 1.25rem;
-        font-weight: 500;
+        font-size: 1.2rem!important;
+        font-weight: 600;
     }
 
     .faq-answer .paragraph {
-        font-size: 1.15rem;
+        font-size: 1rem!important;
         font-weight: 200;
     }
 
@@ -719,12 +730,25 @@
 @media screen and (max-width:375px) {
 
     .home-content-right p {
-        font-size: 1.15rem;
+        font-size: 1rem!important;
         text-align: center;
     }
 
-    .heading {
+    .paragraph-highlight {
+        font-size: 1rem!important;
+    }
+    
+    .home-content .heading-highlight {
         font-size: 1.5rem;
+    }
+
+    .info-content .paragraph {
+    font-size: 1rem!important;
+    text-align: center;
+}
+
+    .heading {
+        font-size: 2rem;
     }
 
     .heading-1 {
@@ -734,6 +758,14 @@
     .heading-highlight {
         font-size: 1.5rem;
     }
+
+    .paragraph-1 {
+        font-size: 1rem;
+    }
+
+    .content-blog-info .paragraph {
+    font-size: 1rem!important;
+}
 
     .footer-links-list.flex {
         gap: 0 5%;
@@ -755,6 +787,10 @@
 }
 
 @media screen and (max-width:425px) {
+
+    main {
+        min-height: unset;
+    }
 
     .final-form {
         height: fit-content;
@@ -825,8 +861,12 @@
     }
 
     .paragraph {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
+    }
+
+    .paragraph-highlight {
+        font-size: 1rem;
     }
 
     .heading-3 {
